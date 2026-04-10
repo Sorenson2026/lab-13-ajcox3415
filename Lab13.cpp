@@ -8,25 +8,30 @@ AJ Cox
 #include <iomanip>
 using namespace std;
 
-void bubbleSort(vector<int> &);
 void fillVector(vector<int> & data);
 
+// Main will greet and call the other functions.
 int main()
 {
+	srand(static_cast<unsigned int>(time(0)));
+
 	vector<int> data(25);
 
+	//Greeting
 	cout << "Hello and welcome." << endl;
 
+	//Call fill vector
 	fillVector(data);
 
 	return 0;
 }
 
+// fillVector will fill the vactor "data" with random values.
 void fillVector(vector<int> & data)
 {
 	for (int i = 0; i < 25; i++)
 	{
-		data[i] = rand() % 100;
+		data[i] = rand() % 101;
 		cout << data[i];
 		cout << endl;
 	}
