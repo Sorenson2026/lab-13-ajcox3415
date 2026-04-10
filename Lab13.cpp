@@ -9,6 +9,7 @@ AJ Cox
 using namespace std;
 
 void fillVector(vector<int> & data);
+void bubbleSort(vector<int> & data);
 
 // Main will greet and call the other functions.
 int main()
@@ -22,6 +23,7 @@ int main()
 
 	//Call fill vector
 	fillVector(data);
+	bubbleSort(data);
 
 	return 0;
 }
@@ -32,8 +34,20 @@ void fillVector(vector<int> & data)
 	for (int i = 0; i < 25; i++)
 	{
 		data[i] = rand() % 101;
-		cout << data[i];
-		cout << endl;
 	}
 	
+}
+
+void bubbleSort(vector<int>& data)
+{
+	for (int i = 0; i < 25; i++)
+	{
+		cout << setw(3) << data[i];
+	}
+	cout << endl;
+
+	for (int i = 0; i < 25; i++)
+	{
+
+	}
 }
