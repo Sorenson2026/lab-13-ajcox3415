@@ -40,15 +40,18 @@ void fillVector(vector<int> & data)
 
 void bubbleSort(vector<int>& data, int size)
 {
-	
+	cout << "Original: ";
 	for (int i = 0; i < 25; i++)
 	{
 		cout << setw(3) << data[i];
 	}
 	cout << endl;
 
+	int count = 1;
 	for (int maxElement = size -1; maxElement > 0; maxElement--)
 	{
+		
+		cout << "Pass #" << setw(2) << count << ": ";
 		for (int i = 0; i < maxElement; i++)
 		{
 			if (data[i] > data[i + 1])
@@ -59,8 +62,10 @@ void bubbleSort(vector<int>& data, int size)
 		}
 		for (int i = 0; i < 25; i++)
 		{
+			//
 			cout << setw(3) << data[i];
 		}
 		cout << endl;
+		count++;
 	}
 }
