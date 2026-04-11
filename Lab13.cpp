@@ -21,7 +21,7 @@ int main()
 	//Greeting
 	cout << "Hello and welcome." << endl;
 
-	//Call fill vector
+	//Call fillVector and bubbleSort
 	fillVector(data);
 	bubbleSort(data, 25);
 
@@ -57,11 +57,10 @@ void bubbleSort(vector<int>& data, int size)
 				
 			}
 		}
-	
+		for (int i = 0; i < 25; i++)
+		{
+			cout << setw(3) << data[i];
+		}
+		cout << endl;
 	}
-	for (int i = 0; i < 25; i++)
-	{
-		cout << setw(3) << data[i];
-	}
-	cout << endl;
 }
